@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - poetry-core >=1.0
+    - hatchling
   run:
     - python >=3.8
     - tmux
