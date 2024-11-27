@@ -1,13 +1,13 @@
 {% set name = "libtmux" %}
-{% set version = "0.37.0" %}
+{% set version = "0.39.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 21955c5dce6332db41abad5e26ae8c4062ef2b9a89099bd57a36f52be1d5270f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 59346aeef3c0d6017f3bc5e23248d43cdf50f32b775b9cb5d9ff5e2e5f3059f4
 
 build:
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - poetry-core >=1.0
+    - hatchling
   run:
     - python >=3.8
     - tmux
