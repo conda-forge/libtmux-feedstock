@@ -11,16 +11,16 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - tmux
     - __unix
 
@@ -30,6 +30,7 @@ test:
     - libtmux.session
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
