@@ -1,5 +1,5 @@
 {% set name = "libtmux" %}
-{% set version = "0.58.0" %}
+{% set version = "0.58.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: abbe330bec2c45687a4bf417ee436373b37046afe123ba547495ee0448e1145a
+  sha256: a294dd585aa419d4ecce36f3e55df656693743c97a0b5b5bb1e5fea31ada2482
 
 build:
   script: {{ PYTHON }} -m pip install --no-deps --no-build-isolation . -vv
