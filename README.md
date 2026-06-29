@@ -18,7 +18,6 @@ with tmux, a terminal multiplexer. You can use it to manage tmux servers, sessio
 and panes.
 Additionally, libtmux powers tmuxp, a tmux workspace manager.
 
-
 Current build status
 ====================
 
