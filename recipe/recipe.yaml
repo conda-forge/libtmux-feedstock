@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: libtmux
-  version: "0.64.0"
+  version: "0.67.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: f0dac5673c60dac3d596b505734e9ac953f6516a64b9eea6d437ab348019e23d
+  sha256: 97df9cf8aada89f13932e13fc661b8244a2369945985b1a81355826a71332d4f
 
 build:
   number: 0
